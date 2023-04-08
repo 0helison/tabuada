@@ -64,3 +64,46 @@ body{
   align-items: center;
   color: aliceblue;
 }
+
+/* Estilos para dispositivos com largura de tela menor que 600px */
+@media screen and (max-width: 600px) {
+  .tabuada {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+
+  .escolher {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .escolher input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .resposta {
+    margin-top: 20px;
+  }
+}
+
+/* Estilos para dispositivos com largura de tela maior que 600px */
+@media screen and (min-width: 600px) {
+  .tabuada {
+    margin-top: 100px;
+    font-size: 50px;
+  }
+
+  .escolher {
+    flex-direction: row;
+  }
+
+  .escolher input {
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  .resposta {
+    margin-top: 50px;
+  }
+}
